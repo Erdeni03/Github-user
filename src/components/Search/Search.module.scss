@@ -1,0 +1,48 @@
+.search {
+	@apply relative w-full h-16 overflow-hidden flex items-center bg-gray-100 shadow-lg rounded-xl md:pl-5;
+	& > button {
+		@apply shrink-0 shadow-lg;
+	}
+}
+
+.label {
+	@apply cursor-pointer;
+}
+
+.textField {
+	@apply py-0 px-2.5 h-16 border-none text-gray-700 text-lg bg-gray-100;
+	flex-grow: 5;
+
+	&:focus {
+		outline: none;
+	}
+	&::placeholder {
+		@apply text-lg;
+	}
+}
+
+.button {
+	@apply h-full py-3 px-6 border-none text-sm bg-indigo-400 shadow cursor-pointer transition text-white hover:bg-indigo-300;
+
+	svg {
+		@apply w-6 h-6;
+	}
+}
+
+.error {
+	@apply absolute right-1/2 bottom-1.5 text-red-500 text-sm font-bold md:right-28 md:top-1/2;
+
+	@media (min-width: 767px) {
+		transform: translateY(-50%);
+		bottom: unset;
+	}
+}
+
+.loading {
+	@apply absolute right-1/2 bottom-1.5 text-gray-800 text-sm font-bold md:right-28 md:top-1/2;
+
+	@media (min-width: 767px) {
+		transform: translateY(-50%);
+		bottom: unset;
+	}
+}

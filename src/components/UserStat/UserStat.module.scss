@@ -1,0 +1,15 @@
+.user {
+	@apply mt-8 bg-gray-50 text-gray-300 py-4 px-8 rounded-xl grid grid-cols-3;
+}
+
+.info {
+	@apply flex flex-col gap-2;
+
+	&Title {
+		@apply text-gray-500 text-xs;
+	}
+
+	&Number {
+		@apply text-lg text-gray-800 font-bold;
+	}
+}

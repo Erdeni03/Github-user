@@ -1,0 +1,15 @@
+.body {
+  & > tr {
+    @apply cursor-pointer h-8;
+    &:nth-child(odd){
+      @apply bg-gray-100;
+    }
+    &:hover {
+      @apply bg-gray-200;
+    }
+  }
+
+}
+.tr {
+
+}

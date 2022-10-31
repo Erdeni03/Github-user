@@ -1,0 +1,28 @@
+.userTitle {
+	h2 {
+		@apply text-lg font-bold text-gray-700 md:text-2xl;
+	}
+
+	h3 {
+		@apply text-gray-500 text-xs md:text-lg;
+
+		&::before {
+			content: '@';
+		}
+	}
+
+	span {
+		@apply text-gray-400 text-xs mt-1.5 md:text-lg md:justify-self-end;
+
+		&::before {
+			content: 'Joined ';
+		}
+	}
+
+	@media (min-width: 1024px) {
+		display: grid;
+		grid-template-rows: repeat(2, auto);
+		grid-auto-flow: column;
+		gap: 2px 10px;
+	}
+}

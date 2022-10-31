@@ -1,0 +1,24 @@
+.card {
+  @apply w-full bg-white shadow-lg rounded-2xl grid gap-x-5 gap-y-6;
+  margin: 1.5rem 0 3rem;
+  padding: 30px 24px 40px;
+  grid-template-columns: 70px 1fr;
+
+  & > *:nth-child(n + 3) {
+    grid-column: 1 / span 2;
+  }
+
+  @media (min-width: 767px) {
+    grid-template-columns: 120px 1fr;
+    padding: 40px;
+    gap: 0px 40px;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 0px 40px;
+
+    & > *:nth-child(n + 3) {
+      grid-column: 1 / span 2;
+    }
+  }
+}

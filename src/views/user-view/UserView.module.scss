@@ -1,0 +1,11 @@
+.avatar {
+	@apply rounded-full max-w-full;
+}
+
+.bio {
+	@apply text-lg text-gray-400;
+
+	&.empty {
+		@apply opacity-75;
+	}
+}
